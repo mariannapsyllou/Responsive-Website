@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="list">
+          <li class="elements" id="logo"><img id="logo" alt="logo" src="./images/logo.png"></li>
+          <li class="elements"><a href ="index.html">Home</a></li>
+          <li class="elements"><a href="posts.html">Posts</a></li>
+          <li class="elements"> Contact Us</li>
+      </ul>
+  </nav>
+
+
+<section class="center">
+  <h1>Contact</h1>
+  <form id="contactForm">
+
+    <div class="txt_field">
+      <input type="text" name="name" id="name" required>
+      <span></span>
+      <label>Full Name</label>
+    </div>
+
+    <div class="txt_field">
+        <input type="text" name="email" id="email" required>
+        <span></span>
+        <label>Email</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="text" name="message" id="message" required>
+      <span></span>
+      <label>Message</label>
+    </div>
+
+
+
+    <input type="submit" value="Submit" onclick="return validateForm()">
+
+    <input type="hidden" name="_template" value="table">
+
+    <div class="homePage_link">
+    <a href="./index.html">Back to Home page</a>
+    </div>
+
+  </form>
+</section>
+</body>
+<script src="scripts/contact.js"></script>
+</html>
